@@ -63,7 +63,9 @@ public class MainActivity extends AppCompatActivity {
         strikeRateOnStrikeId = "strikeRate_text_view_" + batsmanOnStrike;
         batsmanOnNotStrikeId = "batsman_text_view_" + batsmanOnNotStrike;
     }
-
+    /**
+     * This method is to reset batsman1's stat if the wicket falls
+     */
     public void resetBatsman1(){
         batsman1Runs = 0;
         batsman1Balls = 0;
@@ -71,6 +73,9 @@ public class MainActivity extends AppCompatActivity {
         batsman1Sixes = 0;
         batsman1SR = 0.0;
     }
+    /**
+     * This method is to reset batsman2's stat if the wicket falls
+     */
     public void resetBatsman2(){
         batsman2Runs = 0;
         batsman2Balls = 0;
@@ -86,7 +91,9 @@ public class MainActivity extends AppCompatActivity {
         TextView view = (TextView) findViewById(resID);
         view.setText(value);
     }
-
+    /**
+     * This method is to add strike sign for the batsman on strike
+     */
     public void addStrikeSign(String batsmanId){
         int resID = getResources().getIdentifier(batsmanId, "id", getPackageName());
         TextView batsman1 = (TextView) findViewById(resID);
@@ -94,7 +101,9 @@ public class MainActivity extends AppCompatActivity {
         batsmanName = batsmanName + "*";
         batsman1.setText(batsmanName);
     }
-
+    /**
+     * This method is to remove strike sign for the batsman not on strike
+     */
     public void removeStrikeSign(String batsmanId){
         int resID = getResources().getIdentifier(batsmanId, "id", getPackageName());
         TextView batsman2 = (TextView) findViewById(resID);
@@ -221,15 +230,21 @@ public class MainActivity extends AppCompatActivity {
     public void sixRun(View view) {
         addRuns(6,1);
     }
-
+    /**
+     * This method is called if it is a wide ball
+     */
     public void wideBall(View view) {
         addTotal(1, 0, 0);
     }
-
+    /**
+     * This method is called if it is a no ball
+     */
     public void noBall(View view) {
         addTotal(1, 0, 0);
     }
-
+    /**
+     * This method is called if a wicket falls
+     */
     public void wicketBall(View view) {
         addTotal(0, 1, 1);
 
