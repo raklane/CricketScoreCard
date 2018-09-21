@@ -1,0 +1,970 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffff99"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/teamName_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:gravity="center_horizontal"
+            android:text="Team DBU"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/teamName_text_view"
+            android:orientation="vertical">
+
+            <!--
+                This is the batsman' layout
+            -->
+
+            <LinearLayout
+                android:id="@+id/batsman_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="4dp"
+                android:background="#ffb3ff"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:background="#95d680"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="5"
+                        android:text="Batsman"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="3"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="3"
+                        android:text="Runs(Balls)"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="1"
+                        android:text="4's"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="1"
+                        android:text="6's"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="2"
+                        android:text="SR"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="1dp"
+                    android:background="#95d680"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/batsman_text_view_1"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="5"
+                        android:text="Rakesh Kumar"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/status_text_view_1"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="3"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/runs_text_view_1"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="3"
+                        android:text="0(0)"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/fours_text_view_1"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/sixes_text_view_1"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/strikeRate_text_view_1"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="2"
+                        android:text="0.0"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="15sp"
+                    android:layout_margin="1dp"
+                    android:background="#95d680"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/batsman_text_view_2"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="5"
+                        android:text="Nishant Jee"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/status_text_view_2"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="3"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/runs_text_view_2"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="3"
+                        android:text="0(0)"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/fours_text_view_2"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/sixes_text_view_2"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/strikeRate_text_view_2"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="2"
+                        android:text="0.0"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="15sp"
+                    android:layout_margin="1dp"
+                    android:background="#95d680"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/batsman_text_view_3"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="5"
+                        android:text="Virat Kohli"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/status_text_view_3"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="3"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/runs_text_view_3"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="3"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/fours_text_view_3"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="1"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/sixes_text_view_3"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="1"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/strikeRate_text_view_3"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="2"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="15sp"
+                    android:layout_margin="1dp"
+                    android:background="#95d680"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/batsman_text_view_4"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="5"
+                        android:text="MS Dhoni"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/status_text_view_4"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="3"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/runs_text_view_4"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="3"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/fours_text_view_4"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="1"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/sixes_text_view_4"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="1"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/strikeRate_text_view_4"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="2"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="15sp"
+                    android:layout_margin="1dp"
+                    android:background="#95d680"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/batsman_text_view_5"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="5"
+                        android:text="Manish Pandey"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/status_text_view_5"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="3"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/runs_text_view_5"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="3"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/fours_text_view_5"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="1"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/sixes_text_view_5"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="1"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/strikeRate_text_view_5"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="2"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="15sp"
+                    android:layout_margin="1dp"
+                    android:background="#95d680"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/batsman_text_view_6"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="5"
+                        android:text="Hardik Pandya"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/status_text_view_6"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="3"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/runs_text_view_6"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="3"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/fours_text_view_6"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="1"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/sixes_text_view_6"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="1"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/strikeRate_text_view_6"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="2"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="15sp"
+                    android:layout_margin="1dp"
+                    android:background="#95d680"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/batsman_text_view_7"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="5"
+                        android:text="Ravichandran Ashwin"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/status_text_view_7"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="3"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/runs_text_view_7"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="3"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/fours_text_view_7"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="1"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/sixes_text_view_7"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="1"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/strikeRate_text_view_7"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="2"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="15sp"
+                    android:layout_margin="1dp"
+                    android:background="#95d680"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/batsman_text_view_8"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="5"
+                        android:text="Khaleel Ahmed"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/status_text_view_8"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="3"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/runs_text_view_8"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="3"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/fours_text_view_8"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="1"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/sixes_text_view_8"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="1"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/strikeRate_text_view_8"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="2"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="15sp"
+                    android:layout_margin="1dp"
+                    android:background="#95d680"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/batsman_text_view_9"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="5"
+                        android:text="Bhubaneswar Kumar"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/status_text_view_9"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="3"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/runs_text_view_9"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="3"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/fours_text_view_9"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="1"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/sixes_text_view_9"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="1"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/strikeRate_text_view_9"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="2"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="15sp"
+                    android:layout_margin="1dp"
+                    android:background="#95d680"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/batsman_text_view_10"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="5"
+                        android:text="Jasprit Bumrah"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/status_text_view_10"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="3"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/runs_text_view_10"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="3"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/fours_text_view_10"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="1"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/sixes_text_view_10"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="1"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/strikeRate_text_view_10"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="2"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="15sp"
+                    android:layout_margin="1dp"
+                    android:background="#95d680"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/batsman_text_view_11"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="5"
+                        android:text="Yuzvendra Chahal"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/status_text_view_11"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="3"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/runs_text_view_11"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="3"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/fours_text_view_11"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="1"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/sixes_text_view_11"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="1"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/strikeRate_text_view_11"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="2"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="15sp"
+                    android:layout_margin="1dp"
+                    android:background="#95d680"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="8"
+                        android:text="Total"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/totalRuns_text_view"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="4"
+                        android:text="0-0(0.0)"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/runRate_text_view"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="3"
+                        android:text="0.0"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <!--
+                This is the bowlers' layout
+            -->
+
+            <LinearLayout
+                android:id="@+id/bowler_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="#ffb3ff"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:background="#95d680"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="2"
+                        android:text="Bowler"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="1"
+                        android:text="Overs"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="1"
+                        android:text="Runs"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="1"
+                        android:text="Wickets"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="1"
+                        android:text="Economy"
+                        android:textSize="13sp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:background="#95d680"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/bowler_text_view_1"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="2"
+                        android:text="Mohammed Amir"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/bowlerOvers_text_view_1"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/bowlerRuns_text_view_1"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/bowlerWickets_text_view_1"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/bowlerEconomy_text_view_1"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="1"
+                        android:text="0.0"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="2dp"
+                    android:background="#95d680"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/bowler_text_view_2"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="2"
+                        android:text="Hasan Ali"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/bowlerOvers_text_view_2"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/bowlerRuns_text_view_2"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/bowlerWickets_text_view_2"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="1"
+                        android:text="0"
+                        android:textSize="13sp" />
+
+                    <TextView
+                        android:id="@+id/bowlerEconomy_text_view_2"
+                        android:layout_width="0dp"
+                        android:layout_height="15sp"
+                        android:layout_weight="1"
+                        android:text="0.0"
+                        android:textSize="13sp" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!--
+                This is the score buttons layout
+            -->
+
+        <LinearLayout
+            android:id="@+id/scoreButton_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="4dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:background="#ffb3ff"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="oneRun"
+                    android:text="1"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="twoRun"
+                    android:text="2"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="threeRun"
+                    android:text="3"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="fourRun"
+                    android:text="4"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:onClick="sixRun"
+                    android:text="6"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="1dp"
+                android:background="#ffb3ff"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Wide"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:onClick="wideBall"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="No Ball"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:onClick="noBall"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Wicket"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:onClick="wicketBall"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+</LinearLayout>
